@@ -1,0 +1,27 @@
+<html lang = "pt-br">
+    <head>
+        <title> Cadastro de Formandos </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor = green onload="formlogin.login.focus()">
+        <br><br><br><br><br><br>
+        <form action = "login.jsp" name=formlogin  method=POST>
+            <input type = hidden name = oper id = idOper>
+            
+            <div align = center>
+                <table >
+                    <tr><td> Login :</td><td><input type = text name = email placeholder = e-mail ></td></tr>
+                    <tr><td> Senha :</td><td><input type =password   name = senha placeholder = senha >
+                            <input type = button onclick = "formlogin.oper.value='acessar'; submit();" value = "Entrar">
+                            <td></tr>
+                    <br>
+                    <tr><td></td><td colspan = 2>
+                            <input type = button onclick = "window.location.assign('registro.jsp');" value = "Cadastro">
+                            </td></tr>
+                </table>
+            </div>
+        </form>
+
+    </body>
+</html>
